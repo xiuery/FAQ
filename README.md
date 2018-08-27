@@ -11,3 +11,6 @@
     - MRP II（Manufacture Resource Planning）
     - ERP（Enterprise Resource Planning）
     - 电子商务时代的 ERP
+- CI/CD
+  - 持续集成(Continuous integration)
+  - 持续部署（continuous deployment）
