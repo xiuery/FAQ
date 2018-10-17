@@ -36,3 +36,19 @@
   + Web服务器：Apache、Nginx、IIS
   + 数据库：MySQL、Oracle、PostgreSQL等关系型数据库；cassandra、mongoDB、redis等NoSQL数据库
   + 项目管理（PM）：Jira、Asana、Taiga、Trello、Basecamp、Pivotal Tracker
+  
+* 内存模型之缓存一致性 Cache coherence：https://www.cnblogs.com/jiayy/p/3246133.html
+  + Intel 奔腾：MESI 协议
+  + AMD opteron：MOESI 协议
+  + Intel i7： MESIF 协议
+
+* 并发编程：原子性问题，可见性问题，有序性问题
+  + 原子性：一个操作或者多个操作 要么全部执行并且执行的过程不会被任何因素打断，要么就都不执行
+  + 可見性：当多个线程访问同一个变量时，一个线程修改了这个变量的值，其他线程能够立即看得到修改的值
+  + 有序性：程序执行的顺序按照代码的先后顺序执行
+  + JAVA關鍵字：
+    - synchronized和Lock：保證原子性、可见性、有序性
+    - volatitle：只保證可見性、一定的“有序性”，不能保證原子性（当一个共享变量被volatile修饰时，它会保证修改的值会立即被更新到主存，当有其他线程需要读取时，它会去内存中读取新值）
+
+  
+  
